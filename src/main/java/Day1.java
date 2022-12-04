@@ -4,15 +4,11 @@ import java.util.List;
 
 public class Day1 {
     public static void main(String[] args) {
-        List<String> input = getInput();
+        List<String> input = Reader.readfile("Day1.txt");
         System.out.println(GetBiggestKcal(input));
         List<Integer> sortedInput = SortInput(input);
         System.out.println(sortedInput.get(0) +sortedInput.get(1)+sortedInput.get(2));
 
-    }
-
-    private static List<String> getInput(){
-        return Reader.readfile("Day1.txt");
     }
 
     private static List<Integer> SortInput(List<String> input){
